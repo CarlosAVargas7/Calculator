@@ -1,0 +1,16 @@
+/* styles.css */
+body {
+    height: auto;
+    border: 3px solid;
+    border-color: chartreuse;
+    place-items: center;
+}
+
+.carcasa {
+    width: 567px;
+    height: 502px;
+    background-color: gray;
+
+    display: grid;
+    border: 3px solid red;
+}
