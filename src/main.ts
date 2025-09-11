@@ -1,24 +1,24 @@
-function suma(a:number, b:number): number{
-    
-    return a+b;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Vite + TypeScript funcionando ✅");
+});
 
-console.log(suma(1, 2))
+const botonmas = document.querySelector<HTMLButtonElement>('#bmas');
+const botonmen = document.querySelector<HTMLButtonElement>('#bmen');
+let resultado = document.querySelector<HTMLOutputElement>('#res');
 
-function multiplicacion(c: number, d:number): number {
-    c=5
-    d=3
-    return c*d
-}
 
-console.log(multiplicacion(5,5))
 
-// 1. Obtener referencia al botón y tiparlo
-var boton = document.getElementById("fbutton") as HTMLButtonElement;
-var cuenta = document.getElementById("contador") as HTMLParagraphElement
-var num = document.getElementById("numero") as HTMLDataElement
 
-// 2. Agregar un listener para el evento "click"
-boton.addEventListener("click", (event: MouseEvent)=> {
-    num++
+botonmas?.addEventListener('click', () => {
+    console.log('Boton mas se lee');
+    const actual = Number(resultado?.textContent);
+    resultado!.textContent = String(actual + 1)
+    console.log(actual)
+});
+
+botonmen?.addEventListener('click', () => {
+    console.log('Boton men se lee');
+    const valor = Number(resultado?.textContent);
+    resultado!.textContent= String(valor -1);
+    console.log(valor);
 });
