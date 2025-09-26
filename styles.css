@@ -5,12 +5,42 @@ body {
     border-color: chartreuse;
     place-items: center;
 }
-
 .carcasa {
     width: 567px;
     height: 502px;
     background-color: gray;
 
-    display: grid;
     border: 3px solid red;
+    display: grid;
+    grid-template-columns: 330px 237px;
+}
+.mainA {
+    border: 3px solid yellow;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows:
+        22px 30px 100px 50px 300px;
+}
+.mainA div {
+    border: 2px solid black;
+}
+.bMemoria {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(1, auto);
+}
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
+}
+.mainB {
+    border: 3px solid yellow;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows:
+        22px 30px auto;
+}
+.mainB div {
+    border: 2px solid black;
 }

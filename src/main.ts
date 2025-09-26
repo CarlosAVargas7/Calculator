@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Vite + TypeScript funcionando ✅");
 });
-
 const botonmas = document.querySelector<HTMLButtonElement>('#bmas');
 const botonmen = document.querySelector<HTMLButtonElement>('#bmen');
 let resultado = document.querySelector<HTMLOutputElement>('#res');
@@ -19,4 +18,15 @@ botonmen?.addEventListener('click', () => {
     resultado!.textContent = String(valor - 1);
     console.log(valor);
 });
+//----------------------------------------------------------------------
 
+// Variables de estado
+let currentInput: string = ''; // Número actual que se está escribiendo
+let previousInput: string = ''; // Número anterior
+let result: number | null = null; // Resultado parcial o final
+let operators: string[] = []; // Almacena los operadores (+, -)
+
+function appendNumber( digit: string): void {
+    currentInput += digit
+    console.log(currentInput)
+}

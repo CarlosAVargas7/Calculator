@@ -9,23 +9,78 @@
 </head>
 
 <body>
-    
+
     <div>
         <h1>Hola Vite + TypeScript</h1>
-        
+
         <button type="submit" id="bmas">+</button>
         <output id="res">1</output>
         <button type="submit" id="bmen">-</button>
     </div>
 
     <section class="carcasa">
-        <div>
-            <p>Calculadora</p>
+        <div class="mainA">
+            <div>calculadora v2.2.7</div>
+            <div>Estandar</div>
+            <div>
+                <output id="mostrarAcumulador">0</output>
+            </div>
+            <div class="bMemoria">
+                <button class="btn">MC</button>
+                <button class="btn">MR</button>
+                <button class="btn">M+</button>
+                <button class="btn">M-</button>
+                <button class="btn">MS</button>
+            </div>
+            <div class="teclado">
+                <!-- Fila 1: %, CE, C, ⌫ -->
+                <button>%</button>
+                <button>CE</button>
+                <button>C</button>
+                <button>⌫</button>
+
+                <!-- Fila 2: ⅟x, x², ²√x, ÷ -->
+                <button>⅟x</button>
+                <button>x²</button>
+                <button>²√x</button>
+                <button>÷</button>
+
+                <!-- Fila 3: 7, 8, 9, × -->
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>×</button>
+
+                <!-- Fila 4: 4, 5, 6, − -->
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>−</button>
+
+                <!-- Fila 5: 1, 2, 3, + -->
+                <button onclick="appendNumber('1')">1</button>
+                <button id="dos">2</button>
+                <button>3</button>
+                <button id="mas">+</button>
+
+                <!-- Fila 6: +/−, 0, , (decimal), = -->
+                <button>+/−</button>
+                <button>0</button>
+                <button>,</button>
+                <button id="igual"> = </button>
+            </div>
         </div>
+
+        <div class="mainB">
+            <div>vacio</div>
+            <div>historial/memoria</div>
+            <div>pantalla</div>
+        </div>
+
     </section>
-        
+
 </body>
 
 
 </html>
-<script type="module" src="/src/main.ts"></script>
+<script src="/src/main.ts"></script>
