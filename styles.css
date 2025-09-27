@@ -5,6 +5,7 @@ body {
     border-color: chartreuse;
     place-items: center;
 }
+
 .carcasa {
     width: 567px;
     height: 502px;
@@ -14,6 +15,7 @@ body {
     display: grid;
     grid-template-columns: 330px 237px;
 }
+
 .mainA {
     border: 3px solid yellow;
     background-color: aqua;
@@ -21,19 +23,51 @@ body {
     grid-template-rows:
         22px 30px 100px 50px 300px;
 }
+
 .mainA div {
     border: 2px solid black;
 }
+
+.pantalla {
+    border: 3px solid;
+    border-color: blueviolet;
+
+    display: grid;
+    text-align: end;
+
+    grid-template-rows: 2;
+}
+
+#displaySecundario {
+    border: 3px solid;
+    border-color: red;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+
+#displayPrincipal {
+    border: 3px solid;
+    border-color: red;
+
+    margin-top: 0px;
+    margin-right: 5px;
+    font-size: 42px;
+}
+
+
 .bMemoria {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(1, auto);
 }
+
 .teclado {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(6, auto);
 }
+
 .mainB {
     border: 3px solid yellow;
     background-color: aqua;
@@ -41,6 +75,7 @@ body {
     grid-template-rows:
         22px 30px auto;
 }
+
 .mainB div {
     border: 2px solid black;
 }

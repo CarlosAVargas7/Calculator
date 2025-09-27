@@ -22,8 +22,9 @@
         <div class="mainA">
             <div>calculadora v2.2.7</div>
             <div>Estandar</div>
-            <div>
-                <output id="mostrarAcumulador">0</output>
+            <div class="pantalla">
+                <output id="displaySecundario">Secundario</output>
+                <output id="displayPrincipal">Principal</output>
             </div>
             <div class="bMemoria">
                 <button class="btn">MC</button>
@@ -46,28 +47,28 @@
                 <button>÷</button>
 
                 <!-- Fila 3: 7, 8, 9, × -->
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
                 <button>×</button>
 
                 <!-- Fila 4: 4, 5, 6, − -->
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>−</button>
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="setOperation('-')">−</button>
 
                 <!-- Fila 5: 1, 2, 3, + -->
                 <button onclick="appendNumber('1')">1</button>
-                <button id="dos">2</button>
-                <button>3</button>
-                <button id="mas">+</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button onclick="setOperation('+')">+</button>
 
                 <!-- Fila 6: +/−, 0, , (decimal), = -->
                 <button>+/−</button>
-                <button>0</button>
+                <button onclick="appendNumber('0')">0</button>
                 <button>,</button>
-                <button id="igual"> = </button>
+                <button onclick="calculate()"> = </button>
             </div>
         </div>
 
